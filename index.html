@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>LetsTravel</title>
+
+    <!-- * Fontes do Google * -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- * Ícones do Bootstrap * -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- * Arquivos CSS personalizados * -->
+    <link
+      rel="stylesheet"
+      href="./src/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./src/css/responsive.css"
+      media="screen" />
+  </head>
+
+  <body>
+    <!-- * Seção do Cabeçalho * -->
+    <header id="header">
+      <div class="interface">
+        <!-- * Logotipo * -->
+        <section class="logo">
+          <img
+            src="./src/images/letsfly.png"
+            alt="Logotipo do Site" />
+        </section>
+
+        <!-- * Menu de Navegação Desktop * -->
+        <section class="header__menu">
+          <nav>
+            <ul class="menu">
+              <li><a href="#">Início</a></li>
+              <li><a href="#vantagens">Destinos</a></li>
+              <li><a href="#">Hotéis</a></li>
+              <li><a href="#">Passagens</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- * Botão de Contato * -->
+        <section class="contato__btn">
+          <a href="#">
+            <button class="btn">contato</button>
+          </a>
+        </section>
+
+        <!-- * Botão do Menu Mobile * -->
+        <div
+          class="menu-mobile__btn"
+          id="menu-mobile__btn">
+          <div class="menu-mobile__line1"></div>
+          <div class="menu-mobile__line2"></div>
+        </div>
+
+        <!-- * Menu de Navegação Mobile * -->
+        <section
+          class="menu__mobile"
+          id="menu__mobile">
+          <nav>
+            <ul class="menu">
+              <li><a href="#">Início</a></li>
+              <li><a href="#vantagens">Destinos</a></li>
+              <li><a href="#">Hotéis</a></li>
+              <li><a href="#">Passagens</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <!-- * Seção Hero * -->
+      <section class="hero">
+        <div class="interface">
+          <div class="hero__text">
+            <h1>Descubra um <span>novo mundo</span></h1>
+            <p>
+              Novas culturas, paisagens exóticas e experiências únicas
+              <span> com um orçamento ideal planejado para você</span>
+            </p>
+            <a href="#">
+              <button>Quero conhecer</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- * Seção de Vantagens * -->
+      <section class="vantagens"
+        id="vantagens">
+        <div class="interface">
+          <!-- * Conforto * -->
+          <article class="vantagens__container">
+            <div class="vantagens__text">
+              <h3>
+                <span>Viaje</span> com<br />
+                conforto
+              </h3>
+              <p>
+                O prazer de viajar com a máxima comodidade e estilo. Escolha
+                destinos que prometem conforto em cada detalhe. Sua viagem dos
+                sonhos começa aqui!
+              </p>
+            </div>
+            <div class="vantagens__image">
+              <img
+                src="src/images/aviao.png"
+                alt="Avião" />
+            </div>
+          </article>
+
+          <!-- * Melhores Destinos * -->
+          <article class="vantagens__container">
+            <div class="vantagens__image item-order-1">
+              <img
+                src="src/images/carro.png"
+                alt="Carro" />
+            </div>
+            <div class="vantagens__text item-order-2">
+              <h3>
+                <span>Os</span> melhores<br />
+                destinos
+              </h3>
+              <p>
+                Explore os destinos mais encantadores e inesquecíveis do mundo!
+                Deixe-se levar pelas maravilhas que cada lugar tem a oferecer.
+                Aventura, cultura e beleza esperam por você!
+              </p>
+            </div>
+          </article>
+
+          <!-- * Melhores Hotéis * -->
+          <article class="vantagens__container">
+            <div class="vantagens__text">
+              <h3>
+                <span>Os</span> melhores<br />
+                hotéis
+              </h3>
+              <p>
+                Viva a experiência de hospedagem dos sonhos nos hotéis mais
+                luxuosos! Conforto, elegância e serviços excepcionais definem
+                sua estadia. Descanse nos melhores hotéis e acorde no paraíso!
+              </p>
+            </div>
+            <div class="vantagens__image">
+              <img
+                src="src/images/hoteis.png"
+                alt="Hotéis" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- * Seção de Contato * -->
+      <section class="contato">
+        <div class="interface">
+          <article class="contato__text">
+            <h3>Fale agora com <span>nossa equipe</span></h3>
+            <p>E solicite um orçamento personalizado</p>
+          </article>
+
+          <article class="contato__icons">
+            <a href="#">
+              <button class="contato__icons">
+                <i class="bi bi-whatsapp"></i>
+                <p>Chamar no WhatsApp</p>
+              </button>
+            </a>
+            <a href="#">
+              <button class="contato__icons">
+                <i class="bi bi-envelope-at-fill"></i>
+                <p>Enviar Email</p>
+              </button>
+            </a>
+            <a href="#">
+              <button class="contato__icons">
+                <i class="bi bi-telephone-fill"></i>
+                <p>Ligar</p>
+              </button>
+            </a>
+            <a href="#">
+              <button class="contato__icons">
+                <i class="bi bi-ui-checks"></i>
+                <p>Preencher Formulário</p>
+              </button>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- * Seção com Efeito Parallax 1 * -->
+      <section class="efeito-parallax--1">
+        <div class="interface">
+          <h3>Hospedagem?<span>Deixa com a gente</span></h3>
+          <p>
+            Os melhores hotéis e pousadas para o máximo de conforto para você e
+            sua família
+          </p>
+          <a href="#">
+            <button>Conheça os Hotéis</button>
+          </a>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      <!-- * Seção Como Funciona * -->
+      <section class="como-funciona">
+        <div class="interface">
+          <div class="como-funciona__text">
+            <h3>Como <span>funciona?</span></h3>
+          </div>
+
+          <div class="instrucoes">
+            <article class="instrucoes__box">
+              <div class="instrucoes__image">
+                <img
+                  src="src/images/atendimento-ao-cliente.png"
+                  alt="Atendimento Cliente" />
+              </div>
+
+              <div class="instrucoes__text">
+                <h4><span>Você </span>entra em contato</h4>
+                <p>
+                  Fale com a gente fornecendo informações sobre o seu destino,
+                  hospedagem, orçamento e data.
+                </p>
+              </div>
+            </article>
+
+            <article class="instrucoes__box">
+              <div class="instrucoes__image">
+                <img
+                  src="src/images/itinerario-de-viagem.png"
+                  alt="Planejamento" />
+              </div>
+
+              <div class="instrucoes__text">
+                <h4><span>Nós </span>planejamos</h4>
+                <p>
+                  Com base nas suas informações, planejamos uma viagem que caiba
+                  no seu bolso e com o melhor conforto possível para você e sua
+                  família.
+                </p>
+              </div>
+            </article>
+
+            <article class="instrucoes__box">
+              <div class="instrucoes__image">
+                <img
+                  src="src/images/bagagem-de-viagem.png"
+                  alt="Partiu Viajar" />
+              </div>
+              <div class="instrucoes__text">
+                <h4><span>Partiu </span>viajar</h4>
+                <p>
+                  Agora é só fazer as malas e cair na estrada na data acordada.
+                  Não esqueça de tirar muitas fotos e curtir cada momento.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- * Seção com Efeito Parallax 2 * -->
+      <section class="efeito-parallax--2">
+        <div class="interface">
+          <br />
+          <h3><span>Viajar </span>é <span>viver!</span></h3>
+          <p>Sonhar Planejar Realizar</p>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      <!-- * Seção de Contato Repetida * -->
+      <section class="contato">
+        <div class="interface">
+          <article class="contato__text contato__text--hidden">
+            <h3>Fale agora com a <span>nossa equipe</span></h3>
+            <p>E solicite um orçamento personalizado</p>
+          </article>
+
+          <article class="contato__icons contato__icons--hidden">
+            <a href="#">
+              <button class="contato__icons--hidden">
+                <i class="bi bi-whatsapp"></i>
+                <p>Chamar no WhatsApp</p>
+              </button>
+            </a>
+            <a href="#">
+              <button class="contato__icons--hidden">
+                <i class="bi bi-envelope-at-fill"></i>
+                <p>Enviar Email</p>
+              </button>
+            </a>
+            <a href="#">
+              <button class="contato__icons--hidden">
+                <i class="bi bi-telephone-fill"></i>
+                <p>Ligar</p>
+              </button>
+            </a>
+            <a href="#">
+              <button class="contato__icons--hidden">
+                <i class="bi bi-ui-checks"></i>
+                <p>Preencher Formulário</p>
+              </button>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- * Rodapé * -->
+      <footer id="footer">
+        <div class="interface">
+          <section class="top__footer">
+            <div class="footer__icons">
+              <a href="#">
+                <button aria-label="instagram">
+                  <i class="bi bi-instagram"></i>
+                </button>
+              </a>
+              <a href="#">
+                <button aria-label="facebook">
+                  <i class="bi bi-facebook"></i>
+                </button>
+              </a>
+              <a href="#">
+                <button aria-label="tik-tok">
+                  <i class="bi bi-tiktok"></i>
+                </button>
+              </a>
+            </div>
+          </section>
+
+          <section class="middle__footer">
+            <nav class="links__footer">
+              <ul class="links">
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </nav>
+          </section>
+
+          <section class="bottom__footer">
+            <p>LetsTravel 2024 © Todos os direitos reservados</p>
+          </section>
+        </div>
+      </footer>
+    </main>
+
+    <!-- * Arquivos JavaScript * -->
+    <script src="./src/js/images.js"></script>
+    <script src="./src/js/imagecontrol.js"></script>
+    <script src="./src/js/headercontrol.js"></script>
+    <script src="./src/js/menu-mobile.js"></script>
+  </body>
+</html>

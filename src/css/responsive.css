@@ -1,0 +1,120 @@
+@media screen and (max-width: 900px) {
+
+  header .header__menu,
+  header .contato__btn {
+    display: none;
+  }
+
+  header .menu-mobile__btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 878px) {
+
+  /* *Responsivo do Hero */
+  .hero .hero__text h1 {
+    font-size: 2.6em;
+    line-height: 45px;
+  }
+
+  .hero .hero__text p {
+    font-size: 14px;
+  }
+
+  .hero .hero__text p span {
+    display: inline;
+  }
+
+  .hero button {
+    font-size: 18px;
+  }
+
+  /* *Responsivo da seção VANTAGENS */
+
+  .vantagens .vantagens__container {
+    flex-direction: column;
+  }
+
+  .vantagens .vantagens__container .vantagens__image img {
+    width: 100%;
+  }
+
+  .vantagens .vantagens__container .vantagens__text p {
+    margin-bottom: 20px;
+  }
+
+  .vantagens .vantagens__container .item-order-1 {
+    order: 1;
+  }
+
+  .vantagens .vantagens__container .item-order-2 {
+    order: 0;
+  }
+
+  /* *Responsivo da seção CONTATO */
+
+  .contato__text,
+  .contato__icons {
+    display: block;
+    width: 100%;
+  }
+
+  .contato .contato__text h3 {
+    font-size: 2em;
+    line-height: 40px;
+  }
+
+  .contato .contato__text p {
+    margin-bottom: 20px;
+  }
+
+  .contato .contato__icons button {
+    width: 100%;
+  }
+
+  /* * Responsivo das seções PARALLAX */
+
+  section.efeito-parallax--1 .interface h3,
+  section.efeito-parallax--2 .interface h3 {
+    font-size: 2.3em;
+    line-height: 40px;
+  }
+
+  section.efeito-parallax--1 .interface p,
+  section.efeito-parallax--2 .interface p {
+    font: 300 16px sans-serif;
+  }
+
+  /* * Responsivo da seção COMO FUNCIONA */
+  .como-funciona__text,
+  .instrucoes {
+    display: block;
+    width: 100%;
+  }
+
+  .como-funciona .como-funciona__text {
+    position: static;
+  }
+
+  .como-funciona .como-funciona__text h3 {
+    font-size: 3em;
+    line-height: 40px;
+  }
+
+  .instrucoes .instrucoes__box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* * Estilos do FOOTER */
+  footer .middle__footer nav ul {
+    display: block;
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  footer .bottom__footer p {
+    font-size: 14px;
+  }
+}
