@@ -1,25 +1,40 @@
 /* Reset global para todos os elementos */
 * {
-	/* Remove margens padrão */
-	margin: 0;
-	/* Remove preenchimentos padrão */
-	padding: 0;
-	/* Inclui padding e borda na largura/altura total do elemento */
-	box-sizing: border-box;
+  /* Remove margens padrão */
+  margin: 0;
+  /* Remove preenchimentos padrão */
+  padding: 0;
+  /* Inclui padding e borda na largura/altura total do elemento */
+  box-sizing: border-box;
 
-	/* Define a fonte padrão para todos os elementos */
-	font-family: "Poppins", sans-serif;
+  /* Define a fonte padrão para todos os elementos */
+  font-family: "Poppins", sans-serif;
 
-	/* Remove estilos de lista padrão */
-	list-style-type: none;
-	/* Remove decorações de texto padrão (ex: sublinhado em links) */
-	text-decoration: none;
+  /* Remove estilos de lista padrão */
+  list-style-type: none;
+  /* Remove decorações de texto padrão (ex: sublinhado em links) */
+  text-decoration: none;
+}
+
+/* Evita usar prefers-color-scheme dark*/
+@media (prefers-color-scheme: dark) {
 }
 
 /* Estilos específicos para o elemento html */
 html {
-	/* Adiciona rolagem suave ao navegar pela página */
-	scroll-behavior: smooth;
-	/* Ajusta o ponto de parada da rolagem para elementos âncora */
-	scroll-padding-block-start: 70px;
+  /* Adiciona rolagem suave ao navegar pela página */
+  scroll-behavior: smooth;
+  /* Ajusta o ponto de parada da rolagem para elementos âncora */
+  scroll-padding-block-start: 70px;
+
+  color-scheme: light!important;
+  -webkit-force-dark: none;
 }
+
+html,
+body {
+  background-color: #e3e3e3!important;
+  -webkit-force-dark: none;
+  color: black;
+}
+

@@ -30,17 +30,17 @@
     font-size: 18px;
   }
 
-  /* *Responsivo da seção VANTAGENS */
+  /* *Responsivo da seção VANTAGENS e CRUZEIRO */
 
-  .vantagens .vantagens__container {
+  .vantagens .vantagens__container, .cruzeiro .cruzeiro__container {
     flex-direction: column;
   }
 
-  .vantagens .vantagens__container .vantagens__image img {
+  .vantagens .vantagens__container .vantagens__image img, .cruzeiro .cruzeiro__container .cruzeiro__image img {
     width: 100%;
   }
 
-  .vantagens .vantagens__container .vantagens__text p {
+  .vantagens .vantagens__container .vantagens__text p, .cruzeiro .cruzeiro__container .cruzeiro__text p {
     margin-bottom: 20px;
   }
 

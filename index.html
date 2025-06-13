@@ -5,9 +5,12 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>LetsTravel</title>
+    <meta
+      name="color-scheme"
+      content="light only" />
 
-    <!-- * Fontes do Google * -->
+    <title>Projeto Travel Agency</title>
+
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com" />
@@ -19,12 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
 
-    <!-- * Ícones do Bootstrap * -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <!-- * Arquivos CSS personalizados * -->
     <link
       rel="stylesheet"
       href="./src/css/reset.css" />
@@ -38,36 +39,32 @@
   </head>
 
   <body>
-    <!-- * Seção do Cabeçalho * -->
     <header id="header">
       <div class="interface">
-        <!-- * Logotipo * -->
         <section class="logo">
           <img
             src="./src/images/letsfly.png"
             alt="Logotipo do Site" />
         </section>
 
-        <!-- * Menu de Navegação Desktop * -->
         <section class="header__menu">
           <nav>
             <ul class="menu">
               <li><a href="#">Início</a></li>
-              <li><a href="#vantagens">Destinos</a></li>
-              <li><a href="#">Hotéis</a></li>
-              <li><a href="#">Passagens</a></li>
+              <li><a href="#vantagens">Vantagens</a></li>
+              <li><a href="#hoteis">Hotéis</a></li>
+              <li><a href="#cruzeiros">Cruzeiros</a></li>
+              <li><a href="#comofunciona">Como Funciona</a></li>
             </ul>
           </nav>
         </section>
 
-        <!-- * Botão de Contato * -->
         <section class="contato__btn">
-          <a href="#">
+          <a href="#contato">
             <button class="btn">contato</button>
           </a>
         </section>
 
-        <!-- * Botão do Menu Mobile * -->
         <div
           class="menu-mobile__btn"
           id="menu-mobile__btn">
@@ -75,7 +72,6 @@
           <div class="menu-mobile__line2"></div>
         </div>
 
-        <!-- * Menu de Navegação Mobile * -->
         <section
           class="menu__mobile"
           id="menu__mobile">
@@ -83,8 +79,10 @@
             <ul class="menu">
               <li><a href="#">Início</a></li>
               <li><a href="#vantagens">Destinos</a></li>
-              <li><a href="#">Hotéis</a></li>
-              <li><a href="#">Passagens</a></li>
+              <li><a href="#hoteis">Hotéis</a></li>
+              <li><a href="#cruzeiros">Cruzeiros</a></li>
+              <li><a href="#comofunciona">Como Funciona </a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
         </section>
@@ -92,7 +90,6 @@
     </header>
 
     <main>
-      <!-- * Seção Hero * -->
       <section class="hero">
         <div class="interface">
           <div class="hero__text">
@@ -101,15 +98,15 @@
               Novas culturas, paisagens exóticas e experiências únicas
               <span> com um orçamento ideal planejado para você</span>
             </p>
-            <a href="#">
+            <a href="#vantagens">
               <button>Quero conhecer</button>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- * Seção de Vantagens * -->
-      <section class="vantagens"
+      <section
+        class="vantagens"
         id="vantagens">
         <div class="interface">
           <!-- * Conforto * -->
@@ -133,10 +130,11 @@
           </article>
 
           <!-- * Melhores Destinos * -->
-          <article class="vantagens__container">
+          <article
+            class="vantagens__container">
             <div class="vantagens__image item-order-1">
               <img
-                src="src/images/carro.png"
+                src="src/images/destinos.png"
                 alt="Carro" />
             </div>
             <div class="vantagens__text item-order-2">
@@ -153,7 +151,8 @@
           </article>
 
           <!-- * Melhores Hotéis * -->
-          <article class="vantagens__container">
+          <article
+            class="vantagens__container">
             <div class="vantagens__text">
               <h3>
                 <span>Os</span> melhores<br />
@@ -174,45 +173,8 @@
         </div>
       </section>
 
-      <!-- * Seção de Contato * -->
-      <section class="contato">
-        <div class="interface">
-          <article class="contato__text">
-            <h3>Fale agora com <span>nossa equipe</span></h3>
-            <p>E solicite um orçamento personalizado</p>
-          </article>
-
-          <article class="contato__icons">
-            <a href="#">
-              <button class="contato__icons">
-                <i class="bi bi-whatsapp"></i>
-                <p>Chamar no WhatsApp</p>
-              </button>
-            </a>
-            <a href="#">
-              <button class="contato__icons">
-                <i class="bi bi-envelope-at-fill"></i>
-                <p>Enviar Email</p>
-              </button>
-            </a>
-            <a href="#">
-              <button class="contato__icons">
-                <i class="bi bi-telephone-fill"></i>
-                <p>Ligar</p>
-              </button>
-            </a>
-            <a href="#">
-              <button class="contato__icons">
-                <i class="bi bi-ui-checks"></i>
-                <p>Preencher Formulário</p>
-              </button>
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <!-- * Seção com Efeito Parallax 1 * -->
-      <section class="efeito-parallax--1">
+            <!-- * Seção com Efeito Parallax 1 * -->
+      <section class="efeito-parallax--1" id="hoteis">
         <div class="interface">
           <h3>Hospedagem?<span>Deixa com a gente</span></h3>
           <p>
@@ -226,8 +188,41 @@
         <div class="overlay"></div>
       </section>
 
+      <!-- * Cruzeiros * -->
+      <section class="cruzeiro" id="cruzeiros">
+        <div class="interface">
+          <article
+            class="cruzeiro__container">
+            <div class="cruzeiro__text">
+              <h3>
+                <span>Os</span> melhores<br />
+                cruzeiros
+              </h3>
+              <p>
+                Navegue pelo luxo com nossos cruzeiros internacionais de primeira classe! Destinos incríveis, serviço impecável e experiências exclusivas esperam por você. Reserve agora e viva uma viagem extraordinária!
+              </p>
+            </div>
+            <div class="cruzeiro__image">
+              <img
+                src="src/images/cruzeiro.png"
+                alt="imagem de um navio" />
+            </div>
+          </article>
+        </div>
+          </div></section>
+
+      <!-- * Seção com Efeito Parallax 2 * -->
+      <section class="efeito-parallax--2">
+        <div class="interface">
+          <br />
+          <h3><span>Viajar </span>é <span>viver!</span></h3>
+          <p>Sonhar Planejar Realizar</p>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
       <!-- * Seção Como Funciona * -->
-      <section class="como-funciona">
+      <section class="como-funciona" id="comofunciona">
         <div class="interface">
           <div class="como-funciona__text">
             <h3>Como <span>funciona?</span></h3>
@@ -285,18 +280,8 @@
         </div>
       </section>
 
-      <!-- * Seção com Efeito Parallax 2 * -->
-      <section class="efeito-parallax--2">
-        <div class="interface">
-          <br />
-          <h3><span>Viajar </span>é <span>viver!</span></h3>
-          <p>Sonhar Planejar Realizar</p>
-        </div>
-        <div class="overlay"></div>
-      </section>
-
-      <!-- * Seção de Contato Repetida * -->
-      <section class="contato">
+      <!-- * Seção de Contato * -->
+      <section class="contato" id="contato">
         <div class="interface">
           <article class="contato__text contato__text--hidden">
             <h3>Fale agora com a <span>nossa equipe</span></h3>

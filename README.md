@@ -42,7 +42,10 @@ Tipografia moderna com a fonte Poppins.
 ├── 📁src
 │   ├──📁css
 │   │──📁js
-│   └──📁images
+│   │   ├── headercontrol.js
+│   │   ├── imagecontrol.js
+│   │   └── image.js
+│   └──📁images (imagens e elementos visuais)
 ├── index.html
 └── README.md
 ````

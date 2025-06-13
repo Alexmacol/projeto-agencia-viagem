@@ -1,8 +1,8 @@
 // Declaração de variáveis
 let previousImage = null;
 
-// Adiciona um evento que é acionado quando o DOM é completamente carregado
-document.addEventListener("DOMContentLoaded", changeHeroImageInterval);
+// Troca dinâmica só após tudo carregado (inclusive imagens externas)
+window.onload = changeHeroImageInterval;
 
 // Função para trocar a imagem do hero em intervalos
 function changeHeroImageInterval() {
